@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="module" src="include/model-viewer.js"> </script>
+	<script src="include/util.js"></script>
+	<link rel="stylesheet" href="include/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class='nav'><a href='attract.html'>Return</a></div>
+	<div class='wrapper'>
+		<div id='header' class='flex-1 instructions'>Use one or two fingers to move, zoom, or rotate the object</div>
+		<model-viewer class='flex-8'
+			background-color='#000000'
+			auto-rotate
+			camera-controls
+		></model-viewer>
+		<div id='footer' class='flex-1 info'></div>
+	</div>
+	<script>
+		load_artifact();
+		add_idle_listener();
+	</script>
+</body>
+</html>

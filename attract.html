@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="module" src="include/model-viewer.js"> </script>
+	<link rel="stylesheet" href="include/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class='wrapper'>
+		<div id='header' class='flex-1 instructions'>Touch the screen to begin</div>
+		<model-viewer class='flex-8'
+			src='assets/artifact.glb'
+			background-color='#000000'
+			auto-rotate
+		></model-viewer>
+		<div id='footer' class='flex-2 info'></div>
+	</div>
+	<script>
+		document.addEventListener('mousedown', (e) => window.location.href = 'viewer.html?artifact=clarksville-point');
+	</script>
+</body>
+</html>
