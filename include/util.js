@@ -1,3 +1,5 @@
+var ROTATE_TIMER = 3000;
+
 // Idle Listener
 var handle;
 var idle_time = 30;

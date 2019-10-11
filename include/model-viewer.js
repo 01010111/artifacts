@@ -58523,7 +58523,7 @@ const Alignment = {
     ORIGIN: 'origin'
 };
 const ROTATION_SPEED = Math.PI / 32;
-const AUTO_ROTATE_DELAY_AFTER_USER_INTERACTION = 3000;
+const AUTO_ROTATE_DELAY_AFTER_USER_INTERACTION = ROTATE_TIMER;
 const UNBOUNDED_WHITESPACE_RE = /\s+/;
 const alignmentToMaskValues = (alignmentString) => {
     const alignments = alignmentString.split(UNBOUNDED_WHITESPACE_RE);
