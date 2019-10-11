@@ -4,10 +4,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script type="module" src="include/model-viewer.js"> </script>
+	<script src="include/util.js"></script>
 	<link rel="stylesheet" href="include/style.css">
 	<title>Document</title>
 </head>
-<body>
+<body class='hidden'>
 	<div class='wrapper'>
 		<div id='header' class='flex-1 instructions'>Touch the screen to begin</div>
 		<model-viewer class='flex-8'
@@ -18,7 +19,13 @@
 		<div id='footer' class='flex-2 info'></div>
 	</div>
 	<script>
-		document.addEventListener('mousedown', (e) => window.location.href = 'viewer.html?artifact=clarksville-point');
+		document.addEventListener('mousedown', (e) => {
+			document.getElementsByTagName('body')[0].className = 'hidden';
+			setTimeout(() => {
+				window.location.href = 'viewer.html?artifact=clarksville-point';
+			}, 1000);
+		});
+		fade_in();
 	</script>
 </body>
 </html>

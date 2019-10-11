@@ -48,3 +48,11 @@ function set_object(object) {
 	p.innerText = object.description;
 	document.getElementById('footer').appendChild(p);
 }
+
+// Fade in
+
+function fade_in() {
+	setTimeout(() => {
+		document.getElementsByTagName('body')[0].className = 'visible';
+	}, 1000); 
+}
