@@ -6,4 +6,4 @@
 - Attract mode screen listens for pointer input
 - Viewer screen navigates to Attract Mode screen after 30 sec. of inactivity
 
-To view the demo please [click here](http://01010111.com/artifacts/attract.html)
+To view the demo please [click here](http://mobelux.github.io/artifacts/attract.html)
