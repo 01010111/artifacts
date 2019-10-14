@@ -1,16 +1,10 @@
-@font-face {
-	font-family: "Rawlinson";
-	src: url("../assets/Rawlinson.otf") format("opentype");
-}
-
 * {
 	padding: 0;
 	margin: 0;
 	background-color: #000;
 	color: #FE9;
 	font-size: 16px;
-	font-family: "Rawlinson";
-	cursor: none !important;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hidden {
@@ -50,7 +44,7 @@
 }
 
 .nav a {
-	font-size: 2em;
+	font-size: 1em;
 	color: #fa6;
 	font-weight: bold;
 	text-decoration: none;
